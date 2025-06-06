@@ -1,11 +1,12 @@
 from openai import OpenAI
+from config import OPENAI_API_KEY
 
 # Your server URL (replace with your actual URL)
 url = 'https://12ac-49-248-169-218.ngrok-free.app'
 
 history = []
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 while True:
     ip = input("User :: ")
